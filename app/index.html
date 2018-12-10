@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./app.js"></script>
+    <title>Vote</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="alert alert-warning mt-3" role="alert">
+            This prototype is meant for demonstrations purposes only.
+        </div>
+        <div class="row">
+            <!-- <div class="card card-profile-signup p-1"> -->
+            <div class="card-columns">
+                <div class="card card-chose-proposal p-1" id="divChoseVote">
+                    <form>
+                        <div class="card-body">
+                            <h5 class="card-title">Chose your Proposal!</h5>
+                            <p>
+                                Vote for:
+                                <p/>
+                                <div class="form-group">
+                                    <input name="vote" type="radio" class="form-control radio_item" id="voteYes" value="yes">
+                                    <label class="label_item" for="VoteYes" id="labelYes">YES
+                                        <img src="././app/styles/svg/thumbs-up-solid.svg" style="width: 30%; height: 30%">
+                                    </label>
+
+                                    <input name="vote" type="radio" class="form-control radio_item" id="voteNo" value="no">
+                                    <label class="label_item" for="VoteNo" id="labelNo">NO
+                                        <img src="././app/styles/svg/thumbs-down-solid.svg" style="width: 30%; height: 30%">
+                                    </label>
+
+                                </div>
+                                <p>
+                                    ETH Address:
+                                    <span class="eth-address"></span>
+                                    <input type="text" class="form-control" id="ethAddress" value="0x…" disabled>
+                                </p>
+                                <button type="submit" class="btn btn-primary" id="voteButton">Vote</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="card card-profile-signup p-1"> -->
+                <div class="card card-your-proposal p-1 d-none" id="diVote">
+                    <div class="card-body">
+                        <h5 class="card-title">Thanks for vote!</h5>
+                        <p>
+                            ETH Address:
+                            <span class="eth-address"></span>
+                            <input type="text" class="form-control" id="ethAddress2" value="0x…" disabled>
+                        </p>
+                        <p>
+                            Your vote:
+                            <span class="vote"></span>
+                            <input type="text" class="form-control" id="vote" value="True" disabled>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-header">
+                        Proposal results
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The results voted of ethereum users</h5>
+                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+
+                        <h6 class="card-subtitle mb-2 text-muted">Yes
+                            <button type="button" id="buttonYes" class="btn btn-lg btn-primary" disabled>0% (0 votes)</button>
+                        </h6>
+                        <h6 class="card-subtitle mb-2 text-muted">No
+                            <button type="button" id="buttonNo" class="btn btn-lg btn-secondary" disabled>0% (0 votes)</button>
+                        </h6>
+                    </div>
+                    <!-- <div class="card-footer text-muted">
+                    2 days ago
+                </div> -->
+                </div>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">A demo dapp.</span>
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-# dappVote
+# DAppVote
 DApp Test to Altoros Protofire
 ## Getting Started
 This is a project to response a practice about binary vote in DApp to Altoros Protofire.
